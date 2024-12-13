@@ -1,0 +1,4 @@
+Note:
+1) data type of the address bean is same as data type of 
+   property of employee class.
+ 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="bean.Address" >
+    	<property name="city" value="Pune"/>
+    	<property name="state" value="Maharashtra"/>
+	</bean>   
+	<bean name="employee" class="bean.Employee"  autowire="constructor">
+		<constructor-arg name="empName" value="Pratap Patil"/>
+	
+	</bean>     
+</beans>

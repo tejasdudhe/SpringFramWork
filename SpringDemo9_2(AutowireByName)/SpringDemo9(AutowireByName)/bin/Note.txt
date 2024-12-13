@@ -1,0 +1,4 @@
+Note:
+1) Name of the address bean is same as name of name of property
+   of employee class.
+ 

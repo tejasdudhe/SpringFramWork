@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="emp" class="Employee" scope="prototype">
+<property name="eid" value="101"/>
+<property name="ename" value="Amit"/>
+<property name="Qualification">
+<list>
+<value>BCA</value>
+<value>MCA</value>
+<value>PGDBM</value>
+<value>MBS</value>
+<null/>
+</list>
+</property>
+<property name="Skillset">
+<set>
+<value>Java</value>
+<value>J2EE</value>
+<value>Spring</value>
+<value>Hibernate</value>
+</set>
+</property>
+<property name="idproof">
+<map>
+  <entry key="501" value="AdharCard"/>
+  <entry key="502" value="PanCard"/>
+</map>
+</property>
+</bean>
+</beans>

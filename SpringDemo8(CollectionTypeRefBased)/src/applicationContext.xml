@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+<bean id="pc1" class="PersonalCard" scope="prototype">
+<property name="cardid" value="991"/>
+<property name="cardname" value="AdharCard"/>
+</bean>
+
+<bean id="pc2" class="PersonalCard" scope="prototype">
+<property name="cardid" value="992"/>
+<property name="cardname" value="PanCard"/>
+</bean>
+
+<bean id="emp" class="Employee" scope="prototype" >
+<property name="eid" value="101"/>
+<property name="ename" value="Amit"/>
+<property name="pc"> 
+<list>  
+<ref bean="pc1"/>  
+<ref bean="pc2"/>  
+</list>  
+</property>
+</bean>
+
+</beans>

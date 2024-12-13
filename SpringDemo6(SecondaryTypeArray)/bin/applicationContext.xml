@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="hdd1" class="HardDisk">
+<property name="size" value="1TB"/>
+</bean>
+<bean id="hdd2" class="HardDisk">
+<property name="size" value="2TB"/>
+</bean>
+<bean id="hdd3" class="HardDisk">
+<property name="size" value="3TB"/>
+</bean>
+<bean id="cp" class="Computer">
+<property name="company" value="Dell"/>
+<property name="hdd">
+<list>
+  <ref bean="hdd1"/>
+  <ref bean="hdd2"/>
+  <ref bean="hdd3"/>
+</list>
+</property>
+</bean>
+</beans>
